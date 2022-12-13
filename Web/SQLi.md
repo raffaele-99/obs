@@ -34,7 +34,6 @@ HQL does not support comments
 
 # Union Based SQL Injection
 If you can see the output of your SQL query then this is the best way to exploit it
-
 **Determine number of columns:**
 ```sql
 '' UNION SELECT null, null, null... -- 
