@@ -59,9 +59,9 @@ SELECT version FROM v$instance
 
 ## Blind SQLi
 If you cant see the output of your query then try these （￣︶￣）↗　
-
-#### Check your query triggers an error response from the application
 *These are not copy-pastable , you'll need to modify them to fit your already-working injection*
+
+### Check your query triggers an error response from the application
 **Oracle:**
 ```sql
 SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE NULL END FROM dual)
@@ -78,6 +78,9 @@ SELECT CASE WHEN (1=2) THEN 1/0 ELSE NULL END
 ```sql
 SELECT IF(1=2,(SELECT table_name FROM information_schema.tables),'a')
 ```
+
+### Check your query can cause a time delay in the application
+
 
 **If it does not seem to return specific results depending on your injection...**
 - ...and it does not seem to be modifying the response of the application in any way, check out 
