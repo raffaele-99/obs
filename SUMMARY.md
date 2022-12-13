@@ -1,4 +1,6 @@
 # Table of contents
 
 * [README](README.md)
-* [SQLi](Web/SQLi.md)
+
+## Web
+* [SQL Injection](Web/SQLi.md)
