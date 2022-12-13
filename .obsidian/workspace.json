@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "cb42a32df46952ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "558ef5fd0e161b3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fad2ec0878df3b0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "473fdf113ba94771",
+    "type": "split",
+    "children": [
+      {
+        "id": "3183b89d9e34e2c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48e2cc89fc1d6f40",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2a6c64dc2f8724b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f87bd7e8bdc0ac2f",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "57b34ad8d1e35ccf",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd191694c7ef894a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84b6224529131044",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "054a6bc3bf0f60df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5b193ca048b26009",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5f5c49685d5e8bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "7fad2ec0878df3b0",
+  "lastOpenFiles": [
+    "SQL Injection/SQL Injection.md",
+    "SQL Injection/Conditional SQLi.md",
+    "SQL Injection/Blind SQLi.md",
+    "SQL Injection/SQLi entry point detection.md",
+    "SQL Injection/Union Attacks.md",
+    "SQL Injection/Oracle Union Attacks.md",
+    "2022-12-07.md",
+    "Databases/Database Pentesting.md"
+  ]
+}
