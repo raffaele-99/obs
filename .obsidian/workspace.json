@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQLi2.md",
+                "file": "page-1.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQLi2.md",
+                "file": "page-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQLi2.md",
+                "file": "page-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQLi2.md"
+                "file": "page-1.md"
               }
             }
           }
@@ -152,14 +152,14 @@
   "active": "09650ce537d35319",
   "lastOpenFiles": [
     "SQLi.md",
+    "page-1.md",
+    "SQLi2.md",
     "README.md",
     "SUMMARY.md",
     "SQL.md",
     "SQL Injection/SQLi entry point detection.md",
     "SQL Injection/Union Attacks.md",
     "SQL Injection/Blind SQLi.md",
-    "SQL Injection/Conditional SQLi.md",
-    "sql-injection-1/README.md",
-    "sql-injection-2/README.md"
+    "SQL Injection/Conditional SQLi.md"
   ]
 }
