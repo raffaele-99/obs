@@ -1,2 +1,2 @@
 # Table of contents
-  * [SQL Injection](SQL Injection.md)
+[SQL Injection](SQL Injection.md)
