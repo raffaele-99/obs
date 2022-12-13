@@ -1,6 +1,6 @@
 # SQLi
 
-## Check for SQLi
+# Check for SQLi
 **Determine entry point:**
 ```
 '
@@ -34,7 +34,7 @@ HQL
 HQL does not support comments
 ```
 
-## Union Based SQL Injection
+# Union Based SQL Injection
 If you can see the output of your SQL query then this is the best way to exploit it
 
 **Determine number of columns:**
@@ -74,7 +74,7 @@ SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'
 SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'
 ```
 
-## Blind SQLi
+# Blind SQLi
 If you cant see the output of your query then try these （￣︶￣）↗　
 *These are not copy-pastable , you'll need to modify them to fit your already-working injection*
 
