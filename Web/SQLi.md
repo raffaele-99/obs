@@ -45,8 +45,16 @@ HQL does not support comments
 ```sql
 '' UNION SELECT null, null... FROM dual -- 
 ```
-**Get databases**:
-
+**Get database version**:
+```sql
+MySQL, Microsoft
+SELECT @@version
+PostgreSQL
+SELECT version()
+Oracle
+SELECT banner FROM v$version
+SELECT version FROM v$instance
+```
 
 
 
