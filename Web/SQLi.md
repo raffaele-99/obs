@@ -57,7 +57,6 @@ SELECT version FROM v$instance
 ```
 
 
-
 ## Blind SQLi
 If you cant see the output of your query then try these （￣︶￣）↗　
 
