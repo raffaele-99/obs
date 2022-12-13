@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "SQL Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "SQL Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "SQL Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "SQL Injection.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "7fad2ec0878df3b0",
   "lastOpenFiles": [
-    "README.md",
-    "SQL Injection/Union Attacks.md",
     "SUMMARY.md",
+    "README.md",
+    "SQL Injection.md",
+    "SQL Injection/SQLi entry point detection.md",
+    "SQL Injection/Union Attacks.md",
+    "SQL Injection/Blind SQLi.md",
+    "SQL Injection/Conditional SQLi.md",
     "sql-injection-1/README.md",
     "sql-injection-2/README.md",
-    "SQL Injection/Blind SQLi.md",
-    "SQL Injection/SQL Injection.md",
-    "SQL Injection/Conditional SQLi.md",
-    "SQL Injection/SQLi entry point detection.md",
     "SQL Injection/Oracle Union Attacks.md"
   ]
 }
