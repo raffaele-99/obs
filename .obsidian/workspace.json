@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL Injection/Blind SQLi.md",
+                "file": "SQL Injection/Union Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL Injection/Blind SQLi.md",
+                "file": "SQL Injection/Union Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL Injection/Blind SQLi.md",
+                "file": "SQL Injection/Union Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL Injection/Blind SQLi.md"
+                "file": "SQL Injection/Union Attacks.md"
               }
             }
           }
@@ -138,13 +138,15 @@
   },
   "active": "7fad2ec0878df3b0",
   "lastOpenFiles": [
+    "README.md",
+    "SUMMARY.md",
+    "sql-injection-1/README.md",
+    "sql-injection-2/README.md",
+    "SQL Injection/Blind SQLi.md",
     "SQL Injection/SQL Injection.md",
     "SQL Injection/Conditional SQLi.md",
-    "SQL Injection/Blind SQLi.md",
     "SQL Injection/SQLi entry point detection.md",
     "SQL Injection/Union Attacks.md",
-    "SQL Injection/Oracle Union Attacks.md",
-    "2022-12-07.md",
-    "Databases/Database Pentesting.md"
+    "SQL Injection/Oracle Union Attacks.md"
   ]
 }
