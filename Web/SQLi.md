@@ -74,6 +74,7 @@ SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'
 
 # Blind SQLi
 If you cant see the output of your query then try these （￣︶￣）↗　
+
 *These are not copy-pastable , you'll need to modify them to fit your already-working injection*
 
 ### Check your query can trigger an error response from the application
