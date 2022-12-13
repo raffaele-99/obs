@@ -1,4 +1,4 @@
 # Table of contents
 
 * [README](README.md)
-* [SQLi](SQLi.md)
+* [SQLi](Web/SQLi.md)
