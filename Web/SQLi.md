@@ -1,5 +1,6 @@
 # Check for SQLi
-**Determine entry point:**
+## Determine entry point
+**All SQL types:**
 ```
 '
 "
@@ -11,25 +12,15 @@
 "))
 `))
 ```
-**Add comments after quote injection:**
+## Comments after query injection
+**Oracle:**
 ```sql
-MySQL
--- comment [Note the space after the double dash]
-/*comment*/
-/*! MYSQL Special SQL */
-PostgreSQL
 --comment
+```
+**PostgreSQL, MSQL, MySQL, SQLite:**
+```sql
+-- comment [note the space after the double hyphen]
 /*comment*/
-MSQL
---comment
-/*comment*/
-Oracle
---comment
-SQLite
---comment
-/*comment*/
-HQL
-HQL does not support comments
 ```
 
 # Union Based SQL Injection
