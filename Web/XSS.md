@@ -1,4 +1,3 @@
-**webhook.site is useful**
 # Steal Cookies
 ## Basic
 ```javascript
