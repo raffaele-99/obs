@@ -122,3 +122,4 @@ SELECT CASE WHEN (1=1) THEN pg_sleep(10) ELSE pg_sleep(0) END
 ```sql
 SELECT IF(1=1,SLEEP(10),'a')
 ```
+

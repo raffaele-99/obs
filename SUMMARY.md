@@ -1,6 +1,6 @@
 # Table of contents
 
 ## Web
-* [SQL Injection](Web/SQLi.md)
-* [Cross-Site Scripting](Web/XSS.md)
+* [SQLi](Web/SQLi.md)
+* [XSS](Web/XSS.md)
 * 
