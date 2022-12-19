@@ -2,3 +2,5 @@
 
 ## Web
 * [SQL Injection](Web/SQLi.md)
+* [Cross-Site Scripting](XSS.md)
+* 
