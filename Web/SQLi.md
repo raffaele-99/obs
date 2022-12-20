@@ -24,7 +24,7 @@
 ```
 
 # Union Based SQL Injection
-If you can see the output of your SQL query then this is the best way to exploit it ╰(*°▽°*)╯
+If you can see the output of your SQL query then this is the best way to exploit it ``╰(*°▽°*)╯``
 
 ## Get number of columns
 **MySQL, MSQL, PostgreSQL:**
@@ -83,7 +83,7 @@ CONCAT('foo','bar')
 ```
 
 # Blind SQLi
-If you cant see the output of your query then try these （￣︶￣）↗　
+If you cant see the output of your query then try these ``（￣︶￣）↗``　
 
 *These are not copy-pastable , you'll need to modify them to fit your already-working injection*
 

